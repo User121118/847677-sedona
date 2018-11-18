@@ -5,68 +5,93 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+  <div class="page-wrapper">
 <header>
     
-    <nav>
-        <ul>
-            <li>Информация</li>
-            <li>Фото и видео</li>
-            </ul>
-        <ul>    
-            <img src="#" alt="Logo">
-             
-            <li>Карта Штата</li>
-            <li>Гостиницы</li>
+    <nav class="main-nav">
+     <a href="index.html" class="logo"><img src="#"width="" height="" alt="logo"></a>
+        <ul class="site-menu">
+         <li class="site-menu-item"><a href="#">Информация</a></li> 
+         <li class="site-menu-item"><a href="#">Фото и видео</a></li>
+         <li class="site-menu-item"><a href="#">Карта Штата</a></li> 
+         <li class="site-menu-item"><a href="#">Гостиницы</a></li> 
         </ul>
     </nav>
     
 </header>
 
 <section>
-   <div>
-    <img src="#" alt="img_1">
-    
-    <h2>Amara resort & spa</h2>
-    Гостиница от 4000 Р. <br>
-    Подробнее Забронировать  <br>
-    Рейтинг:8,5
+   <div class="hotels">
+
+  <ul class="hotels-list">
+      <li class="hotels-item">
+          <a href="#" class="hotels-item-image"><img src="#" alt="img"></a>
+          <div class="hotels-item-info">
+              <h2 class="hotels-item-title">Amara resort & spa</h2>
+              <span>Гостиница</span>
+              <span>от 4000 р.</span>
+              <a href="#" class="btn">Подробнее</a>
+              <a href="" class="btn-dark">Забронировать</a>  
+          </div>
+        <p class="hotels-item-rating">
+          <span class="hotels-item-stars"></span> рейтинг: 8.5  
+        </p>  
+      </li>
+  </ul>
+ 
+   <ul class="hotels-list">
+      <li class="hotels-item">
+          <a href="#" class="hotels-item-image"><img src="#" alt="img"></a>
+          <div class="hotels-item-info">
+              <h2 class="hotels-item-title">Desert quail inn</h2>
+              <span>Мотель</span>
+              <span>от 3000 р.</span>
+              <a href="#" class="btn">Подробнее</a>
+              <a href="" class="btn-dark">Забронировать</a>  
+          </div>
+        <p class="hotels-item-rating">
+          <span class="hotels-item-stars"></span> рейтинг: 8.9  
+        </p>  
+      </li>
+  </ul>
+   
+   <ul class="hotels-list">
+      <li class="hotels-item">
+          <a href="#" class="hotels-item-image"><img src="#" alt="img"></a>
+          <div class="hotels-item-info">
+              <h2 class="hotels-item-title">Villas at poco diablo</h2>
+              <span>Апартаменты</span>
+              <span>от 2000 р.</span>
+              <a href="#" class="btn">Подробнее</a>
+              <a href="" class="btn-dark">Забронировать</a>  
+          </div>
+        <p class="hotels-item-rating">
+          <span class="hotels-item-stars"></span> рейтинг: 9.2  
+        </p>  
+      </li>
+  </ul>
     </div> 
     
-       <div>
-    <img src="#" alt="img_1">
     
-    <h2>Desert quail inn</h2>
-   Мотель от 3000 Р. <br>
-    Подробнее Забронировать  <br>
-    Рейтинг:8,9
-    </div> 
-    
-       <div>
-    <img src="#" alt="img_1">
-    
-    <h2>Villas at poco diablo</h2>
-    Апартаменты от 2000 Р. <br>
-    Подробнее Забронировать  <br>
-    Рейтинг:9,2
-    </div> 
 </section>
  
- <footer>
-  <div>  
-      <h2>#Visitsedona</h2>
-     <a href="#">
-         <img src="#" alt="Twitter">
-     </a>
-     <a href="#">
-         <img src="#" alt="Facebook">
-     </a>
-      <a href="#">
-         <img src="#" alt="Youtube">
-     </a>
-      <a href="#">
-         <img src="#" alt="Html Academy">
-     </a>
-     </div>
+ 
+ 
+ <footer class="page-footer">
+   
+   <p class="hashtag">#Visitsedona</p>
+   <ul class="social-list">
+       <li><a href="#" class="social-link social-link--tw">tw</a></li>
+       <li><a href="#" class="social-link social-link--fb">fb</a></li>
+       <li><a href="#" class="social-link social-link--yt">yt</a></li>
+   </ul>
+   <p class="copyright">website by <a href="#"><img src="" alt="htmlA"></a> </p> 
+   
+   
+   
+   
  </footer>
+  
+  </div>
    </body>
 </html>
