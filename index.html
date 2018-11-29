@@ -20,10 +20,10 @@
     </header>
     <div>
         <div class="welcome">
-            <img src="intro-welcome.svg" width="459" height="353" alt="intro-welcome">
+            <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         </div>
         <div class="intro">
-            <h1 class="page-title">Седона &ndash; небольшой городок</h1>
+            <h1 class="page-title">Седона &mdash; небольшой городок</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
     </div>
@@ -31,47 +31,11 @@
         <ul class="features-list">
             <li class="features-item">
                 <div class="features-text">
-                    <h2 class="features-text-title">Настоящий городок</h2>
+                    <h2 class="features-title">Настоящий городок</h2>
                     <p>Cедона &ndash; не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <div class="features-image">
-                    <img src="img/realsity.jpg" width="800" height="256" alt="Realsity">
-                </div>
-            </li>
-            <li class="features-item">
-                <div class="features-image">
-                    <img src="#" width="" height="" alt="House">
-                </div>
-                <div class="features-text">
-                    <h2 class="features-text-title2">Жильё</h2>
-                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </div>
-            </li>
-            <li class="features-item">
-                <div class="features-image">
-                    <img src="#" width="" height="" alt="House">
-                </div>
-                <div class="features-text">
-                    <h2 class="features-text-title2">Жильё</h2>
-                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </div>
-            </li>
-            <li class="features-item">
-                <div class="features-image">
-                    <img src="#" width="" height="" alt="Eat">
-                </div>
-                <div class="features-text">
-                    <h2 class="features-text-title2">Еда</h2>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </div>
-            </li>
-            <li class="features-item">
-                <div class="features-image">
-                    <img src="#" width="" height="" alt="Souv">
-                </div>
-                <div class="features-text">
-                    <h2 class="features-text-title2">Сувениры</h2>
-                    <p>Не только китайского, но и местного производства</p>
+                    <img src="img/realsity.jpg" width="800" height="256" alt="Городок Седоны">
                 </div>
             </li>
             <li class="features-item">
@@ -83,23 +47,34 @@
                     <img src="img/bridge.jpg" width="800" height="256" alt="Bridge">
                 </div>
             </li>
-            <li class="features-item">
-                <div class="features-text">
-                    <h2 class="features-text-title">Небльшая площадь</h2>
-                    <p>Все достопримечательности находятся очень близко</p>
-                </div>
+            <li class="features-item light-bg">
+                <h2 class="features-title">Жильё</h2>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="features-item">
-                <div class="features-text">
-                    <h2 class="features-text-title">Красивая дорога</h2>
-                    <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-                </div>
+            <li class="features-item light-bg">
+                <h2 class="features-title">Еда</h2>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="features-item">
-                <div class="features-text">
-                    <h2 class="features-text-title">Мало туристов</h2>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
-                </div>
+            <li class="features-item light-bg">
+                <h2 class="features-title">Сувениры</h2>
+                <p>Не только китайского, но и местного производства!</p>
+            </li>
+
+            <li class="features-item gray-bg">
+                <ul>
+                    <li class="features-item">
+                        <h2 class="features-title">Небльшая площадь</h2>
+                        <p>Все достопримечательности находятся очень близко</p>
+                    </li>
+                    <li class="features-item">
+                        <h2 class="features-title">Красивая дорога</h2>
+                        <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+                    </li>
+                    <li class="features-item">
+                        <h2 class="features-title">Мало туристов</h2>
+                        <p>Большинство едет в гранд каньон и толпится там</p>
+                    </li>
+                </ul>
             </li>
             <li class="features-item">
                 <ul>
@@ -109,6 +84,31 @@
                             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
                             <a href="#">Поиск гостиницы в седоне</a>
                             <!--Тут будет форма -->
+                            <form action=" https://echo.htmlacademy.ru/" method="post">
+                                <p>
+                                    <label for="arrival">Дата заезда:</label>
+                                    <input type="text" name="arrival" id="arrival">
+                                    <input type="button" class="calendar">
+                                </p>
+                                <p>
+                                    <label for="departure">Дата выезда:</label>
+                                    <input type="text" name="departure" id="departure">
+                                    <input type="button" class="calendar">
+                                </p>
+                                <p>
+                                    <label for="grown">Взрослые:</label>
+                                    <input type="button" class="minus">
+                                    <input type="text" name="numeric" id="numeric">
+                                    <input type="button" class="plus">
+                                </p>
+                                <p>
+                                    <label for="child">Дети:</label>
+                                    <input type="button" class="minus">
+                                    <input type="text" name="numeric" id="numeric">
+                                    <input type="button" class="plus">
+                                </p>
+                                <button type="submit">Найти</button>
+                            </form>
                         </div>
                         <div class="features-item-image">
                             <img src="img/map.jpg" alt="????">
