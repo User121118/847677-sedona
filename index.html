@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
-    <title>Sedona</title>
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="main-nav">
-            <a href="#" class="logo"><img src="#" width="" height="" alt="logo"></a>
+            <a href="#" class="logo"><img src="img/logo-sedona.svg" width="140" height="71" alt="logo"></a>
             <ul class="site-menu">
                 <li class="site-menu-item"><a href="#">Информация</a></li>
                 <li class="site-menu-item"><a href="#">Фото и видео</a></li>
@@ -76,48 +78,43 @@
                     </li>
                 </ul>
             </li>
-            <li class="features-item">
-                <ul>
-                    <li>
-                        <div class="features-item-text">
-                            <h2 class="features-text-title">Заинтересовались?</h2>
-                            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                            <a href="#">Поиск гостиницы в седоне</a>
-                            <!--Тут будет форма -->
-                            <form action=" https://echo.htmlacademy.ru/" method="post">
-                                <p>
-                                    <label for="arrival">Дата заезда:</label>
-                                    <input type="text" name="arrival" id="arrival">
-                                    <input type="button" class="calendar">
-                                </p>
-                                <p>
-                                    <label for="departure">Дата выезда:</label>
-                                    <input type="text" name="departure" id="departure">
-                                    <input type="button" class="calendar">
-                                </p>
-                                <p>
-                                    <label for="grown">Взрослые:</label>
-                                    <input type="button" class="minus">
-                                    <input type="text" name="numeric" id="numeric">
-                                    <input type="button" class="plus">
-                                </p>
-                                <p>
-                                    <label for="child">Дети:</label>
-                                    <input type="button" class="minus">
-                                    <input type="text" name="numeric" id="numeric">
-                                    <input type="button" class="plus">
-                                </p>
-                                <button type="submit">Найти</button>
-                            </form>
-                        </div>
-                        <div class="features-item-image">
-                            <img src="img/map.jpg" alt="????">
-                        </div>
-                    </li>
-                </ul>
-            </li>
         </ul>
     </section>
+    <div class="booking">
+        <h2 class="booking-title">Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a href="#" class="booking-btn">Поиск гостиницы в седоне</a>
+        <div class="features-item-text">
+            <form class="booking-form" action=" https://echo.htmlacademy.ru/" method="post">
+                <p class="booking-field">
+                    <label for="arrival">Дата заезда:</label>
+                    <input type="text" name="arrival" id="arrival">
+                    <button type="button" class="calendar">
+                </p>
+                <p>
+                    <label for="departure">Дата выезда:</label>
+                    <input type="text" name="departure" id="departure">
+                    <button type="button" class="calendar">
+                </p>
+                <p class="booking-half-field">
+                    <label for="grown">Взрослые:</label>
+                    <input type="button" class="minus">
+                    <input type="text" value="2" name="numeric" id="numeric">
+                    <input type="button" class="plus">
+                </p>
+                <p class="booking-half-field">
+                    <label for="child">Дети:</label>
+                    <input type="button" class="minus">
+                    <input type="text" value="0" name="numeric" id="numeric">
+                    <input type="button" class="plus">
+                </p>
+                <button class="booking-form-btn" type="submit">Найти</button>
+            </form>
+        </div>
+    </div>
+    <div class="map">
+        <img src="img/map.jpg" alt="Городок Седона">
+    </div>
     <footer class="page-footer">
         <p class="hashtag">#Visitsedona</p>
         <ul class="social-list">
@@ -125,8 +122,10 @@
             <li><a href="#" class="social-link social-link--fb">Facebook</a></li>
             <li><a href="#" class="social-link social-link--yt">Youtube</a></li>
         </ul>
-        <p class="copyright">website by <a href="#"><img src="" alt="htmlA"></a> </p>
+        <p class="copyright">website by <a href="#">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlA">
+            </a>
+        </p>
     </footer>
 </body>
-
 </html>
