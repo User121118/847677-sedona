@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -20,6 +23,7 @@
             </nav>
         </header>
         <section class="hotel-filter">
+           
             <div class="hotel-filter-group">
                 <h2 class="hotel-filter-title">Инфраструктура: </h2>
                 <input type="checkbox" name="pool" id="checkpool" checked>
@@ -38,10 +42,12 @@
                 <input type="checkbox" name="apart" id="checkapart" checked>
                 <label for="checkapart">Апартаменты</label>
             </div>
-            <!-- <div>
-              Стоимость в сутки:  
+            
+            <!-- Стоимость в сутки: -->
+             <div>
+               <form action="https://echo.htmlacademy.ru/" method="get" class="filter-form"></form>
             </div>
-            -->
+            
             <div class="sort-list">
                 <h2 class="hotel-sort-title">Найдено:3</h2>
                 <p>Сортировка</p>
@@ -63,8 +69,8 @@
                         <img src="img/amara.jpg" width="135" height="90" alt="Amara">
                         </a>
                     <div class="hotels-item-info">
-                        <h2 class="hotels-item-title"><a href="">Amara resort & spa
-                        </a>
+                        <h2 class="hotels-item-title">
+                        <a href="">Amara resort & spa</a>
                         </h2>
                         <span>Гостиница</span>
                         <span>от 4000 р.</span>
