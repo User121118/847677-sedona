@@ -1,16 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-size: 14px;
+    line-height: 21px;
 
 }
 
 .welcome {
-    background: url(img/background%20photo.jpg) no-repeat;
-    background-size:1200px 800px;
+    background: url(../img/background-photo.jpg) no-repeat;
+    background-size: 1200px 800px;
     background-position: top center;
     text-align: center;
 
@@ -22,26 +23,63 @@ body {
 
 .features-text {
     background: #81b3d2;
-    color: white;
+    color: #fff;
 }
 
 
 a {
     text-decoration: none;
     color: black;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 .site-menu-item,
 .features-item,
 .social-list,
 .sort-list li,
 .hotels-item{
- list-style-type: none;
+ list-style: none;
 }
 
 .booking,
 .features-item-image,
 .map{
-  text-align: center;  
+  text-align: center;
+  
 }
+
+
+/*===========Flex=======*/  
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+      margin: 0;
+  padding: 0;
+}
+
+.top {
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.intro {
+    text-align: center;
+}
+.page-footer .container {
+  display: flex;
+}
+
+.hashtag,
+.social-list,
+.copyright {
+    width: 400px;
+    text-align: center
+}
+
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -10,23 +11,30 @@
 
 <body>
     <header>
-        <nav class="main-nav">
-            <a href="#" class="logo"><img src="img/logo-sedona.svg" width="140" height="71" alt="logo"></a>
-            <ul class="site-menu">
-                <li class="site-menu-item"><a href="#">Информация</a></li>
-                <li class="site-menu-item"><a href="#">Фото и видео</a></li>
-                <li class="site-menu-item"><a href="#">Карта Штата</a></li>
-                <li class="site-menu-item"><a href="#">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <div class="welcome">
-            <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+        <div class="container">
+            <div class="menu">
+                <nav class="main-nav">
+                    <a href="#" class="logo"><img src="img/logo-sedona.svg" width="140" height="71" alt="logo"></a>
+                    <ul class="site-menu">
+                        <li class="site-menu-item"><a href="#">Информация</a></li>
+                        <li class="site-menu-item"><a href="#">Фото и видео</a></li>
+                        <li class="site-menu-item"><a href="#">Карта Штата</a></li>
+                        <li class="site-menu-item"><a href="#">Гостиницы</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="intro">
-            <h1 class="page-title">Седона &mdash; небольшой городок</h1>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </header>
+    <div class="container">
+        <div class="top">
+            <div class="welcome">
+                <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+            </div>
+            <div class="intro">
+                <h1 class="page-title">Седона &mdash; небольшой городок в Аризоне,
+                    заслуживающий большего!</h1>
+                <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </div>
         </div>
     </div>
     <section class="features">
@@ -65,7 +73,7 @@
             <li class="features-item gray-bg">
                 <ul>
                     <li class="features-item">
-                        <h2 class="features-title">Небльшая площадь</h2>
+                        <h2 class="features-title">Небольшая площадь</h2>
                         <p>Все достопримечательности находятся очень близко</p>
                     </li>
                     <li class="features-item">
@@ -80,52 +88,55 @@
             </li>
         </ul>
     </section>
-    <div class="booking">
-        <h2 class="booking-title">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#" class="booking-btn">Поиск гостиницы в седоне</a>
-        <div class="features-item-text">
+    <div class="container">
+        <div class="booking">
+            <h2 class="booking-title">Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a href="#" class="booking-btn">Поиск гостиницы в седоне</a>
             <form class="booking-form" action=" https://echo.htmlacademy.ru/" method="post">
                 <p class="booking-field">
                     <label for="arrival">Дата заезда:</label>
-                    <input type="text" name="arrival" id="arrival">
+                    <input type="text" value="24 Апреля 2017" name="arrival" id="arrival">
                     <button type="button" class="calendar">
                 </p>
                 <p>
                     <label for="departure">Дата выезда:</label>
-                    <input type="text" name="departure" id="departure">
+                    <input type="text" value="4 Июля 2017" name="departure" id="departure">
                     <button type="button" class="calendar">
                 </p>
                 <p class="booking-half-field">
                     <label for="grown">Взрослые:</label>
                     <input type="button" class="minus">
-                    <input type="text" value="2" name="numeric" id="numeric">
+                    <input type="text" value="2" name="numeric" id="grown">
                     <input type="button" class="plus">
                 </p>
                 <p class="booking-half-field">
-                    <label for="child">Дети:</label>
+                    <label for="children">Дети:</label>
                     <input type="button" class="minus">
-                    <input type="text" value="0" name="numeric" id="numeric">
+                    <input type="text" value="0" name="numeric" id="children">
                     <input type="button" class="plus">
                 </p>
                 <button class="booking-form-btn" type="submit">Найти</button>
             </form>
         </div>
-    </div>
-    <div class="map">
-        <img src="img/map.jpg" alt="Городок Седона">
+        <div class="map">
+            <img src="img/map.jpg" alt="Седона, Аризона, США">
+        </div>
     </div>
     <footer class="page-footer">
-        <p class="hashtag">#Visitsedona</p>
-        <ul class="social-list">
-            <li><a href="#" class="social-link social-link--tw">Twitter</a></li>
-            <li><a href="#" class="social-link social-link--fb">Facebook</a></li>
-            <li><a href="#" class="social-link social-link--yt">Youtube</a></li>
-        </ul>
-        <p class="copyright">website by <a href="#">
-                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlA">
-            </a>
-        </p>
+        <div class="container">
+            <p class="hashtag">#Visitsedona</p>
+            <ul class="social-list">
+                <li><a href="#" class="social-link social-link--tw">Twitter</a></li>
+                <li><a href="#" class="social-link social-link--fb">Facebook</a></li>
+                <li><a href="#" class="social-link social-link--yt">Youtube</a></li>
+            </ul>
+            <p class="copyright">website by <a href="#">
+                    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlA">
+                </a>
+            </p>
+        </div>
     </footer>
 </body>
+
 </html>
