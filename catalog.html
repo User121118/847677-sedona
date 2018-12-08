@@ -4,26 +4,28 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 
 <body>
     <div class="page-wrapper">
-        <header class="page-header">
+        <header>
             <nav class="main-nav">
                 <a href="index.html" class="logo"><img src="img/logo-sedona.svg" width="140" height="71" alt="logo"></a>
                 <ul class="site-menu">
                     <li class="site-menu-item"><a href="#">Информация</a></li>
                     <li class="site-menu-item"><a href="#">Фото и видео</a></li>
                     <li class="site-menu-item"><a href="#">Карта Штата</a></li>
-                    <li class="site-menu-item"><a href="#">Гостиницы</a></li>
+                    <li class="site-menu-item active"><a >Гостиницы</a></li>
                 </ul>
             </nav>
+
+
         </header>
         <section class="hotel-filter">
-           
+           <form action="https://echo.htmlacademy.ru/" method="get" class="filter-form">
             <div class="hotel-filter-group">
                 <h2 class="hotel-filter-title">Инфраструктура: </h2>
                 <input type="checkbox" name="pool" id="checkpool" checked>
@@ -33,7 +35,7 @@
                 <input type="checkbox" name="wifi" id="checkwifi">
                 <label for="checkwifi">Wifi</label>
             </div>
-            <div>
+            <div class="hotel-filter-group-two">
                 <h2>Тип жилья: </h2>
                 <input type="checkbox" name="hotel" id="checkhotel" checked>
                 <label for="checkhotel">Гостиница</label>
@@ -42,35 +44,36 @@
                 <input type="checkbox" name="apart" id="checkapart" checked>
                 <label for="checkapart">Апартаменты</label>
             </div>
-            
             <!-- Стоимость в сутки: -->
-             <div>
-               <form action="https://echo.htmlacademy.ru/" method="get" class="filter-form"></form>
+            <div class="hotel-filter-cost">
+                 <button class="hotel-filter-btn">Показать
+            </button>
             </div>
-            
-            <div class="sort-list">
+            </form>
+            <div class="sort">
                 <h2 class="hotel-sort-title">Найдено:3</h2>
                 <p>Сортировка</p>
-                <ul>
+                <ul class="sort-list">
                     <li><a href="#">По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По рейтингу</a></li>
                 </ul>
                 <div class="sort-arrows">
-                    <a href="#" class="arrow arrow-up active"></a>
-                    <a href="#" class="arrow arrow-down"></a>
+                   <a href="#" class="arrow arrow-up active"><img src="img/icon-up-dir.svg" alt="Стрелка вверх"></a>  
+                    <a href="#" class="arrow arrow-down"><img src="img/icon-down-dir.svg" alt="Стрелка вниз"></a>
                 </div>
             </div>
+            
         </section>
         <section class="hotels">
             <ul class="hotels-list">
                 <li class="hotels-item">
                     <a href="#" class="hotels-item-image">
                         <img src="img/amara.jpg" width="135" height="90" alt="Amara">
-                        </a>
+                    </a>
                     <div class="hotels-item-info">
                         <h2 class="hotels-item-title">
-                        <a href="">Amara resort & spa</a>
+                            <a href="#">Amara resort & spa</a>
                         </h2>
                         <span>Гостиница</span>
                         <span>от 4000 р.</span>
@@ -85,7 +88,7 @@
                 <li class="hotels-item">
                     <a href="#" class="hotels-item-image">
                         <img src="img/desert.jpg" width="135" height="90" alt="Desert">
-                        </a>
+                    </a>
                     <div class="hotels-item-info">
                         <h2 class="hotels-item-title">Desert quail inn</h2>
                         <span>Мотель</span>
@@ -101,7 +104,7 @@
                 <li class="hotels-item">
                     <a href="#" class="hotels-item-image">
                         <img src="img/villas.jpg" width="135" height="90" alt="villas">
-                        </a>
+                    </a>
                     <div class="hotels-item-info">
                         <h2 class="hotels-item-title">Villas at poco diablo</h2>
                         <span>Апартаменты</span>
@@ -115,17 +118,22 @@
                     </p>
                 </li>
             </ul>
+
         </section>
         <footer class="page-footer">
+
             <p class="hashtag">#Visitsedona</p>
             <ul class="social-list">
-                <li><a href="#" class="social-link social-link--tw">Twitter</a></li>
-                <li><a href="#" class="social-link social-link--fb">Facebook</a></li>
-                <li><a href="#" class="social-link social-link--yt">Youtube</a></li>
+                <li><a href="#" class="social-link social-link--tw"></a></li>
+                <li><a href="#" class="social-link social-link--fb"></a></li>
+                <li><a href="#" class="social-link social-link--yt"></a></li>
             </ul>
-            <p class="copyright">website by <a href="#"><img src="img/logo-htmlacademy.svg"  width="115" height="41" alt="htmlA">
-            </a>
+            <p class="copyright">website by
+                <a href="#">
+                    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlA">
+                </a>
             </p>
+
         </footer>
     </div>
 </body>
