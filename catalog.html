@@ -23,6 +23,7 @@
             </nav>
 
 
+
         </header>
         <section class="hotel-filter">
             <form action="https://echo.htmlacademy.ru/" method="get" class="filter-form">
@@ -30,13 +31,13 @@
                     <h2 class="hotel-filter-title">Инфраструктура: </h2>
                     <input type="checkbox" name="pool" id="checkpool" checked>
                     <label for="checkpool">Бассеин</label>
-                    <input type="checkbox" name="park" id="checkpark">
+                    <input class="" type="checkbox" name="park" id="checkpark">
                     <label for="checkpark">Парковка</label>
                     <input type="checkbox" name="wifi" id="checkwifi">
                     <label for="checkwifi">Wifi</label>
                 </div>
-                <div class="hotel-filter-group-two">
-                    <h2>Тип жилья: </h2>
+                <div class="hotel-filter-group">
+                    <h2 class="hotel-filter-title">Тип жилья: </h2>
                     <input type="checkbox" name="hotel" id="checkhotel" checked>
                     <label for="checkhotel">Гостиница</label>
                     <input type="checkbox" name="motel" id="checkmotel" checked>
@@ -45,14 +46,25 @@
                     <label for="checkapart">Апартаменты</label>
                 </div>
                 <!-- Стоимость в сутки: -->
-                <div class="hotel-filter-cost">
-                    <button class="hotel-filter-btn">Показать
-                    </button>
+                <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
                 </div>
             </form>
             <div class="sort">
-                <h2 class="hotel-sort-title">Найдено:3</h2>
-                <p>Сортировка</p>
+                <h2 class="hotel-sort-title">Найдено: 3</h2>
+                <p>Сортировка:</p>
                 <ul class="sort-list">
                     <li><a class="sort-link active" href="#">По цене</a></li>
                     <li><a class="sort-link " href="#">По типу</a></li>
@@ -63,7 +75,6 @@
                     <a href="#" class="arrow arrow-down"><img src="img/icon-down-dir.svg" alt="Стрелка вниз"></a>
                 </div>
             </div>
-
         </section>
         <section class="hotels">
             <ul class="hotels-list">
@@ -80,42 +91,54 @@
                         <a href="#" class="btn">Подробнее</a>
                         <a href="#" class="btn btn-dark">Забронировать</a>
                     </div>
-                    <p class="hotels-item-rating">
-                        <span class="hotels-item-stars"></span>
-                        Рейтинг: 8.5
-                    </p>
+                    <div class="valuation">
+                        <div class="rating">
+                            <span class="hotels-item-stars "></span>
+                        </div>
+                        <p class="hotels-item-rating">Рейтинг: 8,5</p>
+                    </div>
                 </li>
                 <li class="hotels-item">
                     <a href="#" class="hotels-item-image">
                         <img src="img/desert.jpg" width="135" height="90" alt="Desert">
                     </a>
                     <div class="hotels-item-info">
-                        <h2 class="hotels-item-title">Desert quail inn</h2>
+                        <h2 class="hotels-item-title">
+                            <a href="#">Desert quail inn</a>
+                        </h2>
                         <span>Мотель</span>
                         <span>от 3000 р.</span>
                         <a href="#" class="btn">Подробнее</a>
                         <a href="" class="btn btn-dark">Забронировать</a>
                     </div>
-                    <p class="hotels-item-rating">
-                        <span class="hotels-item-stars"></span>
-                        Рейтинг: 8.9
-                    </p>
+
+                    <div class="valuation">
+                        <div class="rating">
+                            <span class="hotels-item-stars three-stars"></span>
+
+                        </div>
+                        <p class="hotels-item-rating">Рейтинг: 8,9</p>
+                    </div>
                 </li>
                 <li class="hotels-item">
                     <a href="#" class="hotels-item-image">
                         <img src="img/villas.jpg" width="135" height="90" alt="villas">
                     </a>
                     <div class="hotels-item-info">
-                        <h2 class="hotels-item-title">Villas at poco diablo</h2>
+                        <h2 class="hotels-item-title">
+                            <a href="#">Villas at poco diablo</a>
+                        </h2>
                         <span>Апартаменты</span>
                         <span>от 2000 р.</span>
                         <a href="#" class="btn">Подробнее</a>
                         <a href="#" class="btn btn-dark">Забронировать</a>
                     </div>
-                    <p class="hotels-item-rating">
-                        <span class="hotels-item-stars"></span>
-                        Рейтинг: 9.2
-                    </p>
+                    <div class="valuation">
+                        <div class="rating">
+                            <span class="hotels-item-stars two-stars"></span>
+                        </div>
+                        <p class="hotels-item-rating">Рейтинг: 9,2</p>
+                    </div>
                 </li>
             </ul>
 
