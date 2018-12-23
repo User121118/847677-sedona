@@ -330,6 +330,22 @@ form.booking-form {
     left: 50%;
     margin-left: -283px;
     font-weight: 700;
+    transform: translateY(-400px);
+}
+
+form.booking-show {
+    transform: translateY(0);
+    animation: show-form 0.6s;
+}
+
+@keyframes show-form {
+    0% {
+        transform: translateY(-400px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .booking-half-field {
@@ -505,6 +521,7 @@ button.plus-2 {
 
 .index-footer {
     position: relative;
+    overflow: hidden;
 }
 
 .footer-wraper {
