@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
     <div class="page-wrapper">
         <header>
             <nav class="main-nav">
-                <a href="index.html" class="logo"><img src="img/logo-sedona.svg" width="140" height="71" alt="logo"></a>
+                <a class="logo" href="index.html">
+                    <img src="img/logo-sedona.svg" width="140" height="71" alt="logo">
+                </a>
                 <ul class="site-menu">
                     <li class="site-menu-item"><a href="#">Информация</a></li>
                     <li class="site-menu-item"><a href="#">Фото и видео</a></li>
@@ -29,20 +32,20 @@
             <form action="https://echo.htmlacademy.ru/" method="get" class="filter-form">
                 <div class="hotel-filter-group">
                     <h2 class="hotel-filter-title">Инфраструктура: </h2>
-                    <input type="checkbox" name="pool" id="checkpool" checked>
+                    <input class="checkbox" type="checkbox" name="pool" id="checkpool" checked>
                     <label for="checkpool">Бассеин</label>
-                    <input class="" type="checkbox" name="park" id="checkpark">
+                    <input class="checkbox" type="checkbox" name="park" id="checkpark">
                     <label for="checkpark">Парковка</label>
-                    <input type="checkbox" name="wifi" id="checkwifi">
+                    <input class="checkbox" type="checkbox" name="wifi" id="checkwifi">
                     <label for="checkwifi">Wifi</label>
                 </div>
                 <div class="hotel-filter-group">
                     <h2 class="hotel-filter-title">Тип жилья: </h2>
-                    <input type="checkbox" name="hotel" id="checkhotel" checked>
+                    <input class="checkbox" type="checkbox" name="hotel" id="checkhotel" checked>
                     <label for="checkhotel">Гостиница</label>
-                    <input type="checkbox" name="motel" id="checkmotel" checked>
+                    <input class="checkbox" type="checkbox" name="motel" id="checkmotel" checked>
                     <label for="checkmotel">Мотель</label>
-                    <input type="checkbox" name="apart" id="checkapart" checked>
+                    <input class="checkbox" type="checkbox" name="apart" id="checkapart" checked>
                     <label for="checkapart">Апартаменты</label>
                 </div>
                 <!-- Стоимость в сутки: -->
