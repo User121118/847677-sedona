@@ -22,7 +22,7 @@ body {
 img {
     max-width: 100%
 }
-.page-header {
+.main-nav {
     position: relative;
 }
 
@@ -183,17 +183,24 @@ a {
     width: 20%;
     padding: 17px 0;
 }
-
+.site-menu-item:nth-child(1) {
+    text-align: left;
+    padding-left: 73px;
+}
 .site-menu-item:nth-child(2) {
     margin-right: 240px;
+    text-align: left;
+    padding-left: 74px;
 }
 
 .site-menu-item:nth-child(3) {
-    padding-left: 6px;
+    padding-right: 75px;
+    text-align: right;
 }
 
 .site-menu-item:nth-child(4) {
-    padding-left: 19px;
+    padding-right: 71px;
+    text-align: right;
 }
 
 .features-list {
@@ -771,7 +778,7 @@ button.plus-2 {
 .checkbox[type="checkbox"]:not(:checked) + label:before {
     content: "";
     position: absolute;
-    left: 14px;
+    left: 11px;
     top: 3px;
     width: 26px;
     height: 25px;
