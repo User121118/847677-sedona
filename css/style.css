@@ -99,9 +99,9 @@ img {
 .features-title {
     margin: 0;
     padding-top: 47px;
-    padding-right: 120px;
+    padding-right: 125px;
     padding-bottom: 22px;
-    padding-left: 120px;
+    padding-left: 125px;
     line-height: 1.1;
     position: relative;
 
@@ -777,8 +777,6 @@ button.plus-2 {
     width: 115px;
     height: 41px;
 }
-
-
 
 .copyright:hover svg,
 .copyright:focus svg {
